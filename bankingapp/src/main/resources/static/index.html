@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Banking App</title>
+</head>
+<body>
+    <h1>Banking Application</h1>
+
+    <!-- Create Account Form -->
+    <div id="box">
+        <h3>Create Account</h3>
+        <form id="createAccountForm">
+            <label for="createName">Account Holder Name:</label>
+            <input type="text" id="createName" name="createName"><br><br>
+            <label for="createBalance">Initial Balance:</label>
+            <input type="text" id="createBalance" name="createBalance"><br><br>
+            <button class="button button1" type="button" onclick="createAccount(event)">Create Account</button>
+        </form>
+    </div>
+
+    <!-- Get Account Form -->
+    <div id="box">
+        <h3>Get Account</h3>
+        <form id="getAccountForm">
+            <label for="getId">Account ID:</label>
+            <input type="text" id="getId" name="getId"><br><br>
+            <button class="button button2" type="button" onclick="getAccount(event)">Get Account</button>
+        </form>
+    </div>
+
+    <!-- Deposit Amount -->
+    <div id="box">
+        <h3>Deposit Amount</h3>
+        <form id="depositForm">
+            <label for="depositId">Account ID:</label>
+            <input type="text" id="depositId" name="depositId"><br><br>
+            <label for="depositAmount">Amount to Deposit:</label>
+            <input type="text" id="depositAmount" name="depositAmount"><br><br>
+            
+        </form>
+        <button class="button button3" type="button" onclick="depositAmount(event)">Deposit</button>
+    </div>
+
+    <!-- Withdraw Amount -->
+    <div id="box">
+        <h3>Withdraw Amount</h3>
+        <form id="withdrawForm">
+            <label for="withdrawId">Account ID:</label>
+            <input type="text" id="withdrawId" name="withdrawId"><br><br>
+            <label for="withdrawAmount">Amount to Withdraw:</label>
+            <input type="text" id="withdrawAmount" name="withdrawAmount"><br><br>
+            
+        </form>
+        <button class="button button4" type="button" onclick="withdrawAmount(event)">Withdraw</button>
+    </div>
+
+    <!-- Delete Account -->
+    <div id="box">
+        <h3>Delete Account</h3>
+        <form id="deleteAccountForm">
+            <label for="deleteId">Account ID:</label>
+            <input type="text" id="deleteId" name="deleteId"><br><br>
+            <button class="button button5" type="button" onclick="deleteAccount(event)">Delete Account</button>
+        </form>
+    </div>
+
+    <!-- List All Accounts -->
+    <div id="box">
+        <h3>List All Accounts</h3>
+        <button class="button button6" type="button" onclick="listAllAccounts(event)">List All Accounts</button>
+    </div>
+
+    <!-- Response Area -->
+    <div id="response">
+    	NOTIFICATION AREA
+    </div>
+
+    <!-- Include JavaScript -->
+    <script src="scripts.js" defer></script> 
+</body>
+</html>
